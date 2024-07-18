@@ -22,7 +22,6 @@ function New-DuckDBConnection {
     param (
         [string]$Path = ":memory:"
     )
-  
     [DuckDB.NET.Data.DuckDBConnection]::new("Data Source=$Path")
 }
 
